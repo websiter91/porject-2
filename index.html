@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SparkleClean</title>
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/apply.css">
     <!-- DaisyUI CDN -->
@@ -13,14 +13,14 @@
 <body class="text-white font-Inter">
 
     <header class="bg-[#091222] fixed top-0 left-0 right-0 backdrop-blur-lg z-10">
-        <div class="container mx-auto relative">
-            <div class="navbar shadow-sm">
+        <div class="container mx-auto ">
+            <div class="navbar shadow-sm relative">
                 <div class="navbar-start">
                 <a href="index.html" class=""><img class="w-48" src="./assets/images/logo-light.svg" alt=""></a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-gray-400 font-semibold">
-                <li><a>About</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -31,15 +31,15 @@
                 <a class="btn bg-[#0D9488] border-0 text-white hover:bg-[#0F766E] ">Get Free Quote</a>
             </div>
 
-            <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost w-full rounded-lg ml-4 hover:bg-[#1F2937] border-0 lg:hidden">
+            <div class="dropdown static">
+                    <div tabindex="0" role="button" class="btn btn-ghost rounded-lg ml-4 hover:bg-[#1F2937] border-0 lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
                         <ul
                     tabindex="-1"
-                    class="menu menu-xl dropdown-content rounded-box z-1 flex flex-col mt-3 top-10 right-0 w-96
+                    class="menu menu-xl dropdown-content absolute rounded-box z-1 lg:hidden mt-3 top-10 right-0 w-full
                     bg-[#060c1c] p-2 shadow">
-                        <li><a>About</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="#service">Services</a></li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#blog">Blog</a></li>
@@ -710,7 +710,7 @@
                     <p class="text-gray-400 text-base font-medium">Find answers to common questions about our cleaning services.</p>
                 </div>
 
-            <div class="w-1/2 mx-auto">
+            <div class="lg:w-1/2 mx-auto">
                 <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold text-lg">How long does a typical cleaning take?</div>
